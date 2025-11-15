@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor Villa - Professional Hostel Organization | New Members</title>
+    <meta name="description" content="Mayor Villa - A premier hostel organization welcoming exceptional students. Meet our new members Adeola (Physiology) and Ife (Mass Communication).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">MV</div>
+                    Mayor Villa
+                </a>
+                <nav class="main-nav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="housemates.html">Members</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tagline">New Members Announcement</div>
+                <h1>Welcome to Mayor Villa</h1>
+                <p>A premier hostel organization dedicated to academic excellence and community development</p>
+                <div class="hero-buttons">
+                    <a href="#members" class="btn">Meet Our Members</a>
+                    <a href="#games" class="btn">Brain Games</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="section animate" id="members">
+            <div class="container">
+                <h2 class="section-title">New Members</h2>
+                <p class="section-subtitle">We are pleased to welcome two exceptional students to our organization</p>
+                
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="member-image">
+                            <img src="adeola.jpg" alt="Adeola - Physiology Student">
+                        </div>
+                        <h3 class="member-name">Adeola</h3>
+                        <p class="member-role">Physiology Student</p>
+                        <div class="member-description">
+                            <p>Adeola brings exceptional academic excellence and dedication to our community. Her expertise in physiology and commitment to understanding complex biological systems makes her a valuable addition to Mayor Villa. She demonstrates outstanding leadership qualities and maintains the highest academic standards while contributing positively to our collaborative environment.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="member-image">
+                            <img src="ife.jpg" alt="Ife - Mass Communication Student">
+                        </div>
+                        <h3 class="member-name">Ife</h3>
+                        <p class="member-role">Mass Communication Student</p>
+                        <div class="member-description">
+                            <p>Ife demonstrates exceptional skills in communication and media studies. Her creative approach to storytelling and professional development in mass communication brings valuable perspectives to our organization. She exemplifies the leadership qualities and academic excellence that define Mayor Villa members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate" id="games">
+            <div class="container">
+                <h2 class="section-title">Brain Games & Challenges</h2>
+                <p class="section-subtitle">Test your intellect with our collection of mind-bending games and riddles</p>
+                
+                <div class="features-grid">
+                    <div class="feature" onclick="startMathChallenge()">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Math Blaster</h3>
+                        <p>Quick mathematical challenges to sharpen your numerical skills</p>
+                    </div>
+                    
+                    <div class="feature" onclick="startWordGame()">
+                        <i class="fas fa-spell-check"></i>
+                        <h3>Word Wizard</h3>
+                        <p>Vocabulary and word association games for language masters</p>
+                    </div>
+                    
+                    <div class="feature" onclick="startLogicPuzzle()">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h3>Logic Labyrinth</h3>
+                        <p>Complex logical reasoning puzzles that will crack your head</p>
+                    </div>
+                    
+                    <div class="feature" onclick="startMemoryGame()">
+                        <i class="fas fa-brain"></i>
+                        <h3>Memory Matrix</h3>
+                        <p>Test and improve your memory with pattern recognition</p>
+                    </div>
+                    
+                    <div class="feature" onclick="startRiddleChallenge()">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Riddle Master</h3>
+                        <p>Ancient riddles and modern brain teasers</p>
+                    </div>
+                    
+                    <div class="feature" onclick="startTrivia()">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Trivia Thunder</h3>
+                        <p>General knowledge questions across all subjects</p>
+                    </div>
+                    
+                    <div class="feature" onclick="startCodeBreaker()">
+                        <i class="fas fa-lock"></i>
+                        <h3>Code Breaker</h3>
+                        <p>Decrypt codes and solve cipher challenges</p>
+                    </div>
+                    
+                    <div class="feature" onclick="startQuickFire()">
+                        <i class="fas fa-stopwatch"></i>
+                        <h3>Quick Fire</h3>
+                        <p>Rapid-fire questions to test your reflexes</p>
+                    </div>
+                </div>
+                
+                <div class="game-stats" style="background: var(--card-bg); border-radius: var(--radius); padding: 2rem; margin: 2rem 0; text-align: center; box-shadow: var(--shadow);">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Your Gaming Stats</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                        <div>
+                            <div style="font-size: 2rem; font-weight: 800; color: var(--accent);" id="gamesPlayed">0</div>
+                            <div style="color: var(--text-light);">Games Played</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2rem; font-weight: 800; color: var(--accent);" id="correctAnswers">0</div>
+                            <div style="color: var(--text-light);">Correct Answers</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2rem; font-weight: 800; color: var(--accent);" id="winStreak">0</div>
+                            <div style="color: var(--text-light);">Win Streak</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 2rem; font-weight: 800; color: var(--accent);" id="playerRank">Rookie</div>
+                            <div style="color: var(--text-light);">Rank</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate" id="motivation">
+            <div class="container">
+                <h2 class="section-title">Daily Motivation</h2>
+                <p class="section-subtitle">Fuel your mind with inspiring quotes and wisdom</p>
+                
+                <div class="cards-container">
+                    <div class="card" style="text-align: center; cursor: pointer;" onclick="getNewQuote()">
+                        <i class="fas fa-quote-left" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                        <div id="motivationQuote" style="font-size: 1.3rem; font-style: italic; color: var(--primary); margin-bottom: 1rem; line-height: 1.6;">
+                            "Success is not final, failure is not fatal: it is the courage to continue that counts."
+                        </div>
+                        <div id="quoteAuthor" style="font-weight: 600; color: var(--text-light);">- Winston Churchill</div>
+                        <button class="btn" style="margin-top: 1rem;" onclick="getNewQuote()">New Quote</button>
+                    </div>
+                    
+                    <div class="card" style="text-align: center;">
+                        <i class="fas fa-trophy" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Achievement Unlocked!</h3>
+                        <div id="achievement" style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 1rem;">
+                            Welcome to Mayor Villa! You've joined an elite community of scholars.
+                        </div>
+                        <div style="background: var(--accent); color: var(--primary); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; font-weight: 600;">
+                            🏆 New Member Badge
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="container">
+                <div class="quote" id="rotatingQuote">
+                    "Mo ma le yin bota - I will chase you all out"
+                </div>
+                <div class="quote-author" id="rotatingAuthor">- Baba_mayor</div>
+                <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                    <em>*Unlike some people we know (looking at you Nat the Lakoko man), we believe in consistent excellence and reliability! 😄</em>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate" id="riddles">
+            <div class="container">
+                <h2 class="section-title">Mind Crackers</h2>
+                <p class="section-subtitle">Riddles that will literally crack your head - proceed with caution!</p>
+                
+                <div class="cards-container">
+                    <div class="card" style="cursor: pointer;" onclick="showRandomRiddle()">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-brain" style="font-size: 3rem; color: var(--accent);"></i>
+                        </div>
+                        <h3 style="text-align: center; color: var(--primary); margin-bottom: 1rem;">The Head Cracker</h3>
+                        <div id="riddleQuestion" style="font-size: 1.2rem; text-align: center; color: var(--text); margin-bottom: 1.5rem; min-height: 60px;">
+                            Click to reveal a mind-bending riddle!
+                        </div>
+                        <div id="riddleAnswer" style="background: var(--accent); padding: 1rem; border-radius: 10px; text-align: center; font-weight: 600; color: var(--primary); display: none;">
+                            Answer will appear here
+                        </div>
+                        <div style="text-align: center; margin-top: 1rem;">
+                            <button class="btn" onclick="showRandomRiddle()">New Riddle</button>
+                            <button class="btn" onclick="revealAnswer()" style="margin-left: 1rem;">Show Answer</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div style="text-align: center;">
+                            <i class="fas fa-fire" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Difficulty Meter</h3>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="background: #ddd; height: 20px; border-radius: 10px; overflow: hidden;">
+                                    <div id="difficultyBar" style="background: linear-gradient(90deg, #4CAF50, #FF9800, #F44336); height: 100%; width: 0%; transition: width 0.5s ease;"></div>
+                                </div>
+                            </div>
+                            <div id="difficultyText" style="font-weight: 600; color: var(--text-light);">Ready to start?</div>
+                            <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                                Current Level: <span id="currentLevel" style="font-weight: 600; color: var(--primary);">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section animate" id="about">
+            <div class="container">
+                <h2 class="section-title">Our Organization</h2>
+                <p class="section-subtitle">Committed to excellence in academic and professional development</p>
+                
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Academic Excellence</h3>
+                        <p>Supporting outstanding academic achievement and intellectual growth among our members.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Leadership</h3>
+                        <p>Fostering leadership skills and community engagement through collaborative initiatives.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Professional Development</h3>
+                        <p>Providing opportunities for career advancement and professional skill development.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Networking</h3>
+                        <p>Building valuable connections and relationships within our professional community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Mayor Villa</h3>
+                    <p>A premier hostel organization committed to academic excellence and professional development since 2024.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="housemates.html">Members</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@mayorvilla.org</li>
+                        <li><i class="fas fa-phone"></i> +234 XXX XXX XXXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Professional Address</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentYear">2024</span> Mayor Villa Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Game Statistics
+        let gameStats = {
+            gamesPlayed: 0,
+            correctAnswers: 0,
+            winStreak: 0,
+            currentLevel: 'Rookie'
+        };
+
+        // Motivation Quotes
+        const motivationQuotes = [
+            { quote: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+            { quote: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+            { quote: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs" },
+            { quote: "Your limitation—it's only your imagination.", author: "Unknown" },
+            { quote: "Great things never come from comfort zones.", author: "Unknown" },
+            { quote: "Dream it. Wish it. Do it.", author: "Unknown" },
+            { quote: "Success doesn't just find you. You have to go out and get it.", author: "Unknown" },
+            { quote: "The harder you work for something, the greater you'll feel when you achieve it.", author: "Unknown" },
+            { quote: "Dream bigger. Do bigger.", author: "Unknown" },
+            { quote: "Don't stop when you're tired. Stop when you're done.", author: "Unknown" },
+            { quote: "Wake up with determination. Go to bed with satisfaction.", author: "Unknown" },
+            { quote: "Do something today that your future self will thank you for.", author: "Sean Patrick Flanery" },
+            { quote: "Little things make big days.", author: "Unknown" },
+            { quote: "It's going to be hard, but hard does not mean impossible.", author: "Unknown" },
+            { quote: "Don't wait for opportunity. Create it.", author: "Unknown" }
+        ];
+
+        // Rotating Quotes for Quote Section
+        const rotatingQuotes = [
+            { quote: "Mo ma le yin bota - I will chase you all out", author: "Baba_mayor" },
+            { quote: "Education is the most powerful weapon which you can use to change the world.", author: "Nelson Mandela" },
+            { quote: "The beautiful thing about learning is that no one can take it away from you.", author: "B.B. King" },
+            { quote: "Intelligence plus character—that is the goal of true education.", author: "Martin Luther King Jr." },
+            { quote: "Live as if you were to die tomorrow. Learn as if you were to live forever.", author: "Mahatma Gandhi" }
+        ];
+
+        // Mind-Cracking Riddles
+        const headCrackerRiddles = [
+            { question: "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?", answer: "Fire" },
+            { question: "The more you take, the more you leave behind. What am I?", answer: "Footsteps" },
+            { question: "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", answer: "A Map" },
+            { question: "What has keys but no locks, space but no room, and you can enter but not go inside?", answer: "A Keyboard" },
+            { question: "I'm tall when I'm young, and short when I'm old. What am I?", answer: "A Candle" },
+            { question: "What gets wetter the more it dries?", answer: "A Towel" },
+            { question: "What has hands but cannot clap?", answer: "A Clock" },
+            { question: "I have a head and a tail that will never meet. Having too many of me is always a treat. What am I?", answer: "A Coin" },
+            { question: "What can travel around the world while staying in a corner?", answer: "A Stamp" },
+            { question: "I'm light as a feather, yet the strongest person can't hold me for five minutes. What am I?", answer: "Your Breath" },
+            { question: "What has one eye but cannot see?", answer: "A Needle" },
+            { question: "What goes up but never comes down?", answer: "Your Age" },
+            { question: "I'm found in socks, scarves, and mittens; and often in the paws of playful kittens. What am I?", answer: "Yarn" },
+            { question: "What has a neck but no head?", answer: "A Bottle" },
+            { question: "The more you have of it, the less you see. What is it?", answer: "Darkness" }
+        ];
+
+        let currentRiddle = null;
+
+        // Game Functions
+        function updateStats() {
+            document.getElementById('gamesPlayed').textContent = gameStats.gamesPlayed;
+            document.getElementById('correctAnswers').textContent = gameStats.correctAnswers;
+            document.getElementById('winStreak').textContent = gameStats.winStreak;
+            document.getElementById('playerRank').textContent = gameStats.currentLevel;
+            
+            // Update rank based on correct answers
+            if (gameStats.correctAnswers >= 50) gameStats.currentLevel = 'Genius';
+            else if (gameStats.correctAnswers >= 30) gameStats.currentLevel = 'Expert';
+            else if (gameStats.correctAnswers >= 20) gameStats.currentLevel = 'Advanced';
+            else if (gameStats.correctAnswers >= 10) gameStats.currentLevel = 'Intermediate';
+            else if (gameStats.correctAnswers >= 5) gameStats.currentLevel = 'Novice';
+        }
+
+        function startMathChallenge() {
+            const levels = [
+                { name: 'Beginner', range: 20, ops: ['+', '-'] },
+                { name: 'Intermediate', range: 50, ops: ['+', '-', '*'] },
+                { name: 'Advanced', range: 100, ops: ['+', '-', '*', '/'] },
+                { name: 'Expert', range: 200, ops: ['+', '-', '*', '/', '^', '√'] },
+                { name: 'Genius', range: 500, ops: ['+', '-', '*', '/', '^', '√', '%', 'log'] }
+            ];
+            
+            const level = levels[Math.min(Math.floor(gameStats.correctAnswers / 10), 4)];
+            const num1 = Math.floor(Math.random() * level.range) + 1;
+            const num2 = Math.floor(Math.random() * level.range) + 1;
+            const op = level.ops[Math.floor(Math.random() * level.ops.length)];
+            let answer, question;
+            
+            switch(op) {
+                case '+': answer = num1 + num2; question = `${num1} + ${num2}`; break;
+                case '-': answer = num1 - num2; question = `${num1} - ${num2}`; break;
+                case '*': answer = num1 * num2; question = `${num1} × ${num2}`; break;
+                case '/': answer = Math.round((num1 / num2) * 100) / 100; question = `${num1 * num2} ÷ ${num2}`; break;
+                case '^': answer = Math.pow(num1 % 10, num2 % 5); question = `${num1 % 10}^${num2 % 5}`; break;
+                case '√': answer = Math.sqrt(num1 * num1); question = `√${num1 * num1}`; break;
+                case '%': answer = num1 % num2; question = `${num1} mod ${num2}`; break;
+                case 'log': answer = Math.log10(num1 * 10); question = `log₁₀(${num1 * 10})`; break;
+            }
+            
+            const userAnswer = prompt(`Math Challenge - ${level.name} Level!\n\n${question} = ?\n\nHint: Round to 2 decimal places if needed`);
+            gameStats.gamesPlayed++;
+            
+            if (Math.abs(parseFloat(userAnswer) - answer) < 0.01) {
+                gameStats.correctAnswers++;
+                gameStats.winStreak++;
+                window.MayorVilla.showNotification('Mathematical Genius!', `Perfect! ${question} = ${answer}. You're mastering ${level.name} level mathematics!`);
+            } else {
+                gameStats.winStreak = 0;
+                window.MayorVilla.showNotification('Keep Calculating!', `The answer was ${answer}. ${level.name} level requires precision!`);
+            }
+            updateStats();
+        }
+
+        function startWordGame() {
+            const wordCategories = {
+                beginner: ['CAT', 'DOG', 'SUN', 'MOON', 'STAR', 'BOOK', 'TREE', 'FISH'],
+                intermediate: ['EXCELLENCE', 'LEADERSHIP', 'INNOVATION', 'DEDICATION', 'KNOWLEDGE', 'WISDOM', 'COURAGE', 'STRENGTH'],
+                advanced: ['PERSEVERANCE', 'DETERMINATION', 'EXTRAORDINARY', 'MAGNIFICENT', 'REVOLUTIONARY', 'SOPHISTICATED', 'INTELLECTUAL', 'PHENOMENAL'],
+                expert: ['INCOMPREHENSIBLE', 'ANTIDISESTABLISHMENTARIANISM', 'PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSISS', 'HIPPOPOTOMONSTROSESQUIPPEDALIOPHOBIA', 'SUPERCALIFRAGILISTICEXPIALIDOCIOUS'],
+                genius: ['METHIONYLTHREONYLTHREONYLGLUTAMINYLARGINYL', 'LOPADOTEMACHOSELACHOGALEOKRANIOLEIPSANODRIMHYPOTRIMMATOSILPHIOPARAOMELITOKATAKECHYMENOKICHLEPIKOSSYPHOPHATTOPERISTERALEKTRYONOPTEKEPHALLIOKIGKLOPELEIOLAGOIOSIRAIOBAPHETRAGANOPTERYGON']
+            };
+            
+            const levels = ['beginner', 'intermediate', 'advanced', 'expert', 'genius'];
+            const currentLevel = levels[Math.min(Math.floor(gameStats.correctAnswers / 8), 4)];
+            const words = wordCategories[currentLevel];
+            const word = words[Math.floor(Math.random() * words.length)];
+            
+            const gameTypes = ['unscramble', 'missing', 'rhyme', 'synonym', 'definition'];
+            const gameType = gameTypes[Math.floor(Math.random() * gameTypes.length)];
+            
+            let question, answer = word;
+            
+            switch(gameType) {
+                case 'unscramble':
+                    const scrambled = word.split('').sort(() => Math.random() - 0.5).join('');
+                    question = `Unscramble: ${scrambled}`;
+                    break;
+                case 'missing':
+                    const missing = Math.floor(Math.random() * word.length);
+                    const wordWithMissing = word.split('').map((char, i) => i === missing ? '_' : char).join('');
+                    question = `Fill the missing letter: ${wordWithMissing}`;
+                    answer = word[missing];
+                    break;
+                case 'rhyme':
+                    question = `What rhymes with '${word.slice(0, -2)}AT'?`;
+                    break;
+                case 'synonym':
+                    const synonyms = { 'EXCELLENCE': 'GREATNESS', 'LEADERSHIP': 'GUIDANCE', 'INNOVATION': 'CREATIVITY' };
+                    question = `Synonym for: ${word}`;
+                    answer = synonyms[word] || word;
+                    break;
+                case 'definition':
+                    const definitions = { 'EXCELLENCE': 'The quality of being outstanding', 'LEADERSHIP': 'The action of leading a group' };
+                    question = `Define: ${word}`;
+                    answer = definitions[word] || word;
+                    break;
+            }
+            
+            const userAnswer = prompt(`Word Wizard - ${currentLevel.toUpperCase()} Level!\n\n${question}`);
+            gameStats.gamesPlayed++;
+            
+            if (userAnswer && userAnswer.toUpperCase().includes(answer.toUpperCase())) {
+                gameStats.correctAnswers++;
+                gameStats.winStreak++;
+                window.MayorVilla.showNotification('Vocabulary Virtuoso!', `Brilliant! You've mastered ${currentLevel} level word challenges!`);
+            } else {
+                gameStats.winStreak = 0;
+                window.MayorVilla.showNotification('Word Warrior!', `The answer was ${answer}. ${currentLevel.toUpperCase()} level vocabulary takes practice!`);
+            }
+            updateStats();
+        }
+
+        function startLogicPuzzle() {
+            const puzzleCategories = {
+                beginner: [
+                    { question: "If all cats are animals and Fluffy is a cat, is Fluffy an animal?", answer: "YES" },
+                    { question: "If A = B and B = C, then A = ?", answer: "C" }
+                ],
+                intermediate: [
+                    { question: "If all Bloops are Razzies and all Razzies are Lazzies, then all Bloops are definitely Lazzies. True or False?", answer: "TRUE" },
+                    { question: "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?", answer: "0.05" }
+                ],
+                advanced: [
+                    { question: "You have 12 balls, 11 identical and 1 different weight. Using a balance scale only 3 times, how do you find the different ball?", answer: "DIVIDE" },
+                    { question: "A man lives on the 20th floor. Every day he takes the elevator down to ground floor. When he comes back, he takes the elevator to the 10th floor and walks the rest, except on rainy days. Why?", answer: "HEIGHT" }
+                ],
+                expert: [
+                    { question: "In a room of 23 people, what's the probability that two people share the same birthday?", answer: "50" },
+                    { question: "You're in a room with 3 light switches. Each controls a bulb in another room. You can only visit the other room once. How do you determine which switch controls which bulb?", answer: "HEAT" }
+                ],
+                genius: [
+                    { question: "The Monty Hall Problem: You choose door 1 of 3. Host opens door 3 (goat). Should you switch to door 2?", answer: "YES" },
+                    { question: "A prisoner must choose between two rooms: one with a lady, one with a tiger. Each door has a sign, but only one is true. Door 1: 'In this room there is a lady, and in the other room there is a tiger.' Door 2: 'In one of these rooms there is a lady, and in one of these rooms there is a tiger.' Which door?", answer: "2" }
+                ]
+            };
+            
+            const levels = ['beginner', 'intermediate', 'advanced', 'expert', 'genius'];
+            const currentLevel = levels[Math.min(Math.floor(gameStats.correctAnswers / 12), 4)];
+            const puzzles = puzzleCategories[currentLevel];
+            const puzzle = puzzles[Math.floor(Math.random() * puzzles.length)];
+            
+            const userAnswer = prompt(`Logic Labyrinth - ${currentLevel.toUpperCase()} Level!\n\n${puzzle.question}\n\nThink carefully...`);
+            gameStats.gamesPlayed++;
+            
+            if (userAnswer && userAnswer.toUpperCase().includes(puzzle.answer.toUpperCase())) {
+                gameStats.correctAnswers++;
+                gameStats.winStreak++;
+                window.MayorVilla.showNotification('Logic Virtuoso!', `Exceptional reasoning! You've conquered ${currentLevel} level logic!`);
+            } else {
+                gameStats.winStreak = 0;
+                window.MayorVilla.showNotification('Logic Learner!', `The key was ${puzzle.answer}. ${currentLevel.toUpperCase()} logic requires deep thinking!`);
+            }
+            updateStats();
+        }
+
+        function startMemoryGame() {
+            const sequence = [];
+            for (let i = 0; i < 5; i++) {
+                sequence.push(Math.floor(Math.random() * 9) + 1);
+            }
+            
+            alert(`Memory Matrix!\n\nMemorize this sequence: ${sequence.join(' - ')}\n\nYou have 5 seconds!`);
+            
+            setTimeout(() => {
+                const userAnswer = prompt('Now enter the sequence (separate numbers with spaces):');
+                gameStats.gamesPlayed++;
+                
+                if (userAnswer && userAnswer.replace(/\s+/g, ' ').trim() === sequence.join(' ')) {
+                    gameStats.correctAnswers++;
+                    gameStats.winStreak++;
+                    window.MayorVilla.showNotification('Memory Champion!', 'Perfect recall! Your memory is phenomenal!');
+                } else {
+                    gameStats.winStreak = 0;
+                    window.MayorVilla.showNotification('Keep Training!', `The sequence was: ${sequence.join(' ')}. Memory improves with practice!`);
+                }
+                updateStats();
+            }, 5000);
+        }
+
+        function startRiddleChallenge() {
+            const riddle = headCrackerRiddles[Math.floor(Math.random() * headCrackerRiddles.length)];
+            const userAnswer = prompt(`Riddle Master Challenge!\n\n${riddle.question}`);
+            gameStats.gamesPlayed++;
+            
+            if (userAnswer && userAnswer.toLowerCase().includes(riddle.answer.toLowerCase())) {
+                gameStats.correctAnswers++;
+                gameStats.winStreak++;
+                window.MayorVilla.showNotification('Riddle Solved!', `Excellent! The answer was ${riddle.answer}. You're a true riddle master!`);
+            } else {
+                gameStats.winStreak = 0;
+                window.MayorVilla.showNotification('Think Again!', `The answer was ${riddle.answer}. Riddles require creative thinking!`);
+            }
+            updateStats();
+        }
+
+        function startTrivia() {
+            const trivia = [
+                { question: "What is the powerhouse of the cell?", answer: "MITOCHONDRIA" },
+                { question: "Who wrote 'Romeo and Juliet'?", answer: "SHAKESPEARE" },
+                { question: "What is the capital of Nigeria?", answer: "ABUJA" },
+                { question: "What does 'www' stand for?", answer: "WORLD WIDE WEB" },
+                { question: "What is the largest planet in our solar system?", answer: "JUPITER" }
+            ];
+            
+            const question = trivia[Math.floor(Math.random() * trivia.length)];
+            const userAnswer = prompt(`Trivia Thunder!\n\n${question.question}`);
+            gameStats.gamesPlayed++;
+            
+            if (userAnswer && userAnswer.toUpperCase().includes(question.answer)) {
+                gameStats.correctAnswers++;
+                gameStats.winStreak++;
+                window.MayorVilla.showNotification('Trivia Master!', `Correct! The answer was ${question.answer}. Your knowledge is impressive!`);
+            } else {
+                gameStats.winStreak = 0;
+                window.MayorVilla.showNotification('Learn More!', `The answer was ${question.answer}. Knowledge is power!`);
+            }
+            updateStats();
+        }
+
+        function startCodeBreaker() {
+            const codes = [
+                { cipher: "PDBRUBYLOOD", answer: "MAYORVILLA", hint: "Caesar cipher, shift -3" },
+                { cipher: "8-5-12-12-15", answer: "HELLO", hint: "A=1, B=2, C=3..." }
+            ];
+            
+            const code = codes[Math.floor(Math.random() * codes.length)];
+            const userAnswer = prompt(`Code Breaker Challenge!\n\nDecode: ${code.cipher}\nHint: ${code.hint}`);
+            gameStats.gamesPlayed++;
+            
+            if (userAnswer && userAnswer.toUpperCase() === code.answer) {
+                gameStats.correctAnswers++;
+                gameStats.winStreak++;
+                window.MayorVilla.showNotification('Code Cracked!', `Brilliant! The answer was ${code.answer}. You're a master decoder!`);
+            } else {
+                gameStats.winStreak = 0;
+                window.MayorVilla.showNotification('Keep Trying!', `The answer was ${code.answer}. Cryptography takes practice!`);
+            }
+            updateStats();
+        }
+
+        function startQuickFire() {
+            const questions = [
+                "2 + 2 = ?",
+                "Capital of France?",
+                "How many days in a week?",
+                "Color of the sun?",
+                "Opposite of hot?"
+            ];
+            
+            const answers = ["4", "PARIS", "7", "YELLOW", "COLD"];
+            let correct = 0;
+            
+            for (let i = 0; i < questions.length; i++) {
+                const start = Date.now();
+                const userAnswer = prompt(`Quick Fire! (${i+1}/5)\n\n${questions[i]}\n\nYou have 3 seconds!`);
+                const timeTaken = Date.now() - start;
+                
+                if (timeTaken <= 3000 && userAnswer && userAnswer.toUpperCase().includes(answers[i])) {
+                    correct++;
+                }
+            }
+            
+            gameStats.gamesPlayed++;
+            gameStats.correctAnswers += correct;
+            
+            if (correct >= 4) {
+                gameStats.winStreak++;
+                window.MayorVilla.showNotification('Lightning Fast!', `${correct}/5 correct! Your reflexes are incredible!`);
+            } else {
+                gameStats.winStreak = 0;
+                window.MayorVilla.showNotification('Speed Training!', `${correct}/5 correct. Practice makes perfect!`);
+            }
+            updateStats();
+        }
+
+        function getNewQuote() {
+            const quote = motivationQuotes[Math.floor(Math.random() * motivationQuotes.length)];
+            document.getElementById('motivationQuote').textContent = `"${quote.quote}"`;
+            document.getElementById('quoteAuthor').textContent = `- ${quote.author}`;
+        }
+
+        function showRandomRiddle() {
+            currentRiddle = headCrackerRiddles[Math.floor(Math.random() * headCrackerRiddles.length)];
+            document.getElementById('riddleQuestion').textContent = currentRiddle.question;
+            document.getElementById('riddleAnswer').style.display = 'none';
+            
+            // Update difficulty
+            const difficulty = Math.floor(Math.random() * 100) + 1;
+            document.getElementById('difficultyBar').style.width = difficulty + '%';
+            
+            if (difficulty <= 30) {
+                document.getElementById('difficultyText').textContent = 'Easy Peasy';
+                document.getElementById('currentLevel').textContent = 'Beginner';
+            } else if (difficulty <= 60) {
+                document.getElementById('difficultyText').textContent = 'Getting Warmer';
+                document.getElementById('currentLevel').textContent = 'Intermediate';
+            } else if (difficulty <= 85) {
+                document.getElementById('difficultyText').textContent = 'Head Scratcher';
+                document.getElementById('currentLevel').textContent = 'Advanced';
+            } else {
+                document.getElementById('difficultyText').textContent = 'BRAIN MELTER!';
+                document.getElementById('currentLevel').textContent = 'Expert';
+            }
+        }
+
+        function revealAnswer() {
+            if (currentRiddle) {
+                document.getElementById('riddleAnswer').textContent = currentRiddle.answer;
+                document.getElementById('riddleAnswer').style.display = 'block';
+            }
+        }
+
+        // Rotate quotes every 10 seconds
+        let quoteIndex = 0;
+        setInterval(() => {
+            quoteIndex = (quoteIndex + 1) % rotatingQuotes.length;
+            document.getElementById('rotatingQuote').textContent = `"${rotatingQuotes[quoteIndex].quote}"`;
+            document.getElementById('rotatingAuthor').textContent = rotatingQuotes[quoteIndex].author;
+        }, 10000);
+
+        document.addEventListener('DOMContentLoaded', function() {
+            updateStats();
+            
+            const challengeBtn = document.createElement('button');
+            challengeBtn.textContent = 'Random Challenge';
+            challengeBtn.className = 'btn';
+            challengeBtn.style.cssText = 'position: fixed; bottom: 20px; right: 20px; z-index: 1000;';
+            challengeBtn.onclick = () => {
+                const games = [startMathChallenge, startWordGame, startLogicPuzzle, startMemoryGame, startRiddleChallenge, startTrivia, startCodeBreaker, startQuickFire];
+                const randomGame = games[Math.floor(Math.random() * games.length)];
+                randomGame();
+            };
+            document.body.appendChild(challengeBtn);
+        });
+    </script>
+</body>
+</html>
